@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# settings.py
+import os
+
+# Add this near your other ALLOWED_HOSTS configuration
+PORT = os.getenv("PORT", default="10000")
 
 # Application definition
 
